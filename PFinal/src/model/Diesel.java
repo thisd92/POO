@@ -10,8 +10,8 @@ public class Diesel extends Veiculo{
         
     }
     
-    public Diesel(String nome, String marca, int capacidadeTanque, String combustivel){
-        super (nome, marca, capacidadeTanque, combustivel);
+    public Diesel(String nome, String marca, String ano, String combustivel){
+        super (nome, marca, ano, combustivel);
     }
     
     @Override

@@ -10,8 +10,8 @@ public class Gasolina extends Veiculo{
         
     }
     
-    public Gasolina(String nome, String marca, int capacidadeTanque, String combustivel){
-        super (nome, marca, capacidadeTanque, combustivel);
+    public Gasolina(String nome, String marca, String ano, String combustivel){
+        super (nome, marca, ano, combustivel);
     }
     
     @Override

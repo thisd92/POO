@@ -10,15 +10,16 @@ public abstract class Veiculo {
     public String marca;
     public double capacidadeTanque;
     public String combustivel;
+    public String ano;
 
     public Veiculo(){
         
     }
     
-    public Veiculo(String nome, String marca, int litrosTanque, String combustivel) {
+    public Veiculo(String nome, String marca, String ano, String combustivel) {
         this.nome = nome;
         this.marca = marca;
-        this.capacidadeTanque = litrosTanque;
+        this.ano = ano;
         this.combustivel = combustivel;
     }
     
@@ -27,7 +28,7 @@ public abstract class Veiculo {
     public abstract void excluir();
     
     public String getLista(){
-        return "Veiuclo: " + nome + "\nMarca: " + marca
+        return "Veiuclo: " + nome + "\nMarca: " + marca + "\nAno: " + ano
                 + "\nCapaciade do Tanque: " + capacidadeTanque
                 + "\nTipo de Combustivel: " + combustivel;
     }
@@ -62,6 +63,14 @@ public abstract class Veiculo {
 
     public void setCombustivel(String combustivel) {
         this.combustivel = combustivel;
+    }
+
+    public String getAno() {
+        return ano;
+    }
+
+    public void setAno(String ano) {
+        this.ano = ano;
     }
     
 }

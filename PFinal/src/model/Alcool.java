@@ -10,8 +10,8 @@ public class Alcool extends Veiculo {
         
     }
     
-    public Alcool(String nome, String marca, int capacidadeTanque, String combustivel){
-        super (nome, marca, capacidadeTanque, combustivel);
+    public Alcool(String nome, String marca, String ano, String combustivel){
+        super (nome, marca, ano, combustivel);
     }
     
     @Override

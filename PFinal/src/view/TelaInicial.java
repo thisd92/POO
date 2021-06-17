@@ -23,13 +23,15 @@ public class TelaInicial {
         List<Condutor> listaCondutores = new ArrayList<>();
         
         while(!opcao.equalsIgnoreCase("0")){
-            String texto = "Digite sua opcão: \n"+
+            String texto = "Bem-Vindo! \n\n"+
+                    "Veiculos: \n" + 
                     "1 - Adicionar Veiculo \n" +
                     "2 - Remover Veiculo \n" +
-                    "3 - Listar Veiculos \n" +
+                    "3 - Listar Veiculos \n\n" +
+                    "Condutores: \n" +
                     "4 - Cadastrar Condutor \n" +
                     "5 - Remover Condutor \n" +
-                    "6 - Listar Condutores \n" +
+                    "6 - Listar Condutores \n\n" +
                     "0 - Sair";
             opcao = JOptionPane.showInputDialog(texto);
                    
@@ -49,8 +51,11 @@ public class TelaInicial {
                                 String marcaGasolina = JOptionPane.showInputDialog("Marca do veiculo ");
                                 g1.setMarca(marcaGasolina);
                                 
-                                String nomeGasolina = JOptionPane.showInputDialog("Nome do Veiculo " + marcaGasolina);
+                                String nomeGasolina = JOptionPane.showInputDialog("Modelo do Veiculo " + marcaGasolina);
                                 g1.setNome(nomeGasolina);
+                                
+                                String anoGasolina = JOptionPane.showInputDialog("Ano do Veiculo " + marcaGasolina + " " + nomeGasolina);
+                                g1.setAno(anoGasolina);
                                 
                                 String tanqueGasolina = JOptionPane.showInputDialog("Capacidade do tanque de combustivel do veiculo " + marcaGasolina + " " + nomeGasolina);
                                 g1.setCapacidadeTanque(Integer.valueOf(tanqueGasolina));
@@ -66,8 +71,11 @@ public class TelaInicial {
                                 String marcaAlcool = JOptionPane.showInputDialog("Marca do veiculo ");
                                 a1.setMarca(marcaAlcool);
                                 
-                                String nomeAlcool = JOptionPane.showInputDialog("Nome do Veiculo " + marcaAlcool);
+                                String nomeAlcool = JOptionPane.showInputDialog("Modelo do Veiculo " + marcaAlcool);
                                 a1.setNome(nomeAlcool);
+                                
+                                String anoAlcool = JOptionPane.showInputDialog("Ano do Veiculo " + marcaAlcool + " " + nomeAlcool);
+                                a1.setAno(anoAlcool);
 
                                 String tanqueAlcool = JOptionPane.showInputDialog("Capacidade do tanque de combustivel do veiculo " + marcaAlcool + " " + nomeAlcool);
                                 a1.setCapacidadeTanque(Integer.valueOf(tanqueAlcool)); 
@@ -83,8 +91,11 @@ public class TelaInicial {
                                 String marcaDiesel = JOptionPane.showInputDialog("Marca do veiculo ");
                                 d1.setMarca(marcaDiesel);
                                 
-                                String nomeDiesel = JOptionPane.showInputDialog("Nome do Veiculo " + marcaDiesel);
+                                String nomeDiesel = JOptionPane.showInputDialog("Modelo do Veiculo " + marcaDiesel);
                                 d1.setNome(nomeDiesel);
+                                
+                                String anoDiesel = JOptionPane.showInputDialog("Ano do Veiculo " + marcaDiesel + " " + nomeDiesel);
+                                d1.setAno(anoDiesel);
                                 
                                 String tanqueDiesel = JOptionPane.showInputDialog("Capacidade do tanque de combustivel do veiculo " + marcaDiesel + " " + nomeDiesel);
                                 d1.setCapacidadeTanque(Integer.valueOf(tanqueDiesel));
